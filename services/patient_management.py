@@ -15,5 +15,6 @@ def register_patient():
 def get_patient(patient_id):
     patient = db.patients.find_one({"_id": ObjectId(patient_id)})
     if patient:
+        
         return jsonify(patient), 200
     return jsonify({"message": "Patient not found!"}), 404
