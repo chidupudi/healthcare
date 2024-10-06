@@ -15,6 +15,7 @@ app.register_blueprint(medical_bp, url_prefix='/api')
 app.register_blueprint(billing_bp, url_prefix='/api')
 app.register_blueprint(prescription_bp, url_prefix='/api')
 
+
 @app.route('/')
 def home():
     return "Welcome to the Healthcare Management System!"
