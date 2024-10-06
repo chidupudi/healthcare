@@ -4,6 +4,7 @@ from bson.objectid import ObjectId
 
 billing_bp = Blueprint('billing', __name__)
 
+
 @billing_bp.route('/bills', methods=['POST'])
 def create_bill():
     data = request.json
